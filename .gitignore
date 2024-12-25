@@ -1,0 +1,7 @@
+# Ommit the DS_Store folder automatically created by macOS
+.DS_Store/
+# Python cache
+__pycache__/
+/*/__pycache__/
+/*/*/__pycache__/
+

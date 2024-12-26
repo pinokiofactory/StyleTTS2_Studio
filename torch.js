@@ -69,6 +69,24 @@ module.exports = {
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": "pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cpu"
       }
-    }
+    },
+    {
+      "when": "{{platform === 'win32'}}",
+      "method": "shell.run",
+      "params": {
+        "venv": "{{args && args.venv ? args.venv : null}}",
+        "path": "{{args && args.path ? args.path : '.'}}",
+        "message": "del requirements.txt 2>nul && ren requirements_pinokio.txt requirements.txt"
+      }
+    },
+    {
+      "when": "{{platform === 'win32' || platfrom ==='darwin'}}",
+      "method": "shell.run",
+      "params": {
+        "venv": "{{args && args.venv ? args.venv : null}}",
+        "path": "{{args && args.path ? args.path : '.'}}",
+        "message": "rm -f requirements.txt && mv requirements_pinokio.txt requirements.txt"
+      }
+    },
   ]
 }

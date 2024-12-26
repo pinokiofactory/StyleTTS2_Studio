@@ -62,10 +62,6 @@ module.exports = {
           text: "Start",
           href: "start.js",
         }, {
-          icon: "fa-solid fa-dumbbell",
-          text: "Train",
-          href: "train.js",
-        }, {
           icon: "fa-solid fa-plug",
           text: "Update",
           href: "update.js",

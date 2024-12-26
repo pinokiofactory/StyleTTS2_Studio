@@ -76,7 +76,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "del requirements.txt 2>nul && ren requirements_pinokio.txt requirements.txt"
+        "message": "del requirements.txt 2>nul && copy requirements_pinokio.txt requirements.txt"
       }
     },
     {
@@ -85,7 +85,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "rm -f requirements.txt && mv requirements_pinokio.txt requirements.txt"
+        "message": "rm -f requirements.txt && cp requirements_pinokio.txt requirements.txt"
       }
     }
   ]

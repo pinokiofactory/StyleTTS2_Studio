@@ -80,13 +80,13 @@ module.exports = {
       }
     },
     {
-      "when": "{{platform === 'win32' || platfrom ==='darwin'}}",
+      "when": "{{platform === 'linux' || platfrom ==='darwin'}}",
       "method": "shell.run",
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": "rm -f requirements.txt && mv requirements_pinokio.txt requirements.txt"
       }
-    },
+    }
   ]
 }

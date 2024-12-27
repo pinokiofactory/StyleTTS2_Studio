@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: "0.1",
+  version: "3.0",
   title: "StyleTTS2 Studio",
   description: "Build your own voice for StyleTTS2",
   icon: "icon.png",

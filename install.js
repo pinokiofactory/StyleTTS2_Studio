@@ -5,7 +5,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://huggingface.co/spaces/Wismut/StyleTTS2_Studio app",
+          "git clone -b pinokio --single-branch https://huggingface.co/spaces/Wismut/StyleTTS2_Studio app",
         ]
       }
     },

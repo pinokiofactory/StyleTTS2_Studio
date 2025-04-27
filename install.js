@@ -32,12 +32,6 @@ module.exports = {
           "uv pip install pydantic==2.10.6"
         ]
       }
-    },
-    {
-      method: "fs.link",
-      params: {
-        venv: "app/env"
-      }
     }
   ]
 }
